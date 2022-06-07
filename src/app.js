@@ -1,11 +1,23 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+function excuseGenerator() {
+  let who = ["Mi perro", "Mi vecina", "Mi pc", "Mi loro"];
+  let action = ["rayó", "se comió", "rompió", "borró"];
+  let what = ["mi tarea", "mi trabajo", "el informe", "las llaves"];
+  let when = [
+    "justo antes de la clase",
+    "cuando iba saliendo",
+    "al terminar ",
+    "mientras fui a comprar",
+    "antes de levantarme"
+  ];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  let a = Math.floor(Math.random() * who.length);
+  let b = Math.floor(Math.random() * action.length);
+  let c = Math.floor(Math.random() * what.length);
+  let d = Math.floor(Math.random() * when.length);
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  return `${who[a]} ${action[b]} ${what[c]} ${when[d]} !`;
+}
+
+window.onclick = function() {
+  document.querySelector("#excusa").innerHTML = excuseGenerator();
 };

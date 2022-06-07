@@ -1,1 +1,27 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(223, 217, 217);
+}
+
+.container p, h1{
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-variant:small-caps ;
+    font-size:xx-large;
+}
+
+.container{
+    background-color: rgba(195, 111, 216, 0.8);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 5rem;
+}
+.btn{
+    background-color: blueviolet;
+}
